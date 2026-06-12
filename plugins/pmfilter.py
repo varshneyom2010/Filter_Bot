@@ -1960,7 +1960,7 @@ async def auto_filter(client, msg, spoll=False):
                         sent = await message.reply_photo(photo=photo, caption=cap)
                     except Exception as e:
                         photo = imdb.get('poster')
-                    sent = await rating=imdb['rating'],message.reply_photo(photo=photo, caption=cap)
+                    sent = await message.reply_photo(photo=photo, caption=cap)
                     if m:
                         await m.delete()
                 except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
