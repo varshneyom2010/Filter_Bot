@@ -1976,7 +1976,7 @@ async def auto_filter(client, msg, spoll=False):
                 sent = await message.reply_text(text=cap, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=True, parse_mode=enums.ParseMode.HTML)
                 if m:
                     await m.delete()
-        except Exception as e:
+            except Exception as e:
             logger.exception("Failed to send result: %s", e)
             return
         try:
