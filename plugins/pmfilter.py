@@ -1949,17 +1949,17 @@ async def auto_filter(client, msg, spoll=False):
 
                     for idx, file in enumerate(files, start=1):
                         cap += f"<b>\n{idx}. <a href='https://telegram.me/{temp.U_NAME}?start=file_{message.chat.id}_{file.file_id}'>[{get_size(file.file_size)}] {clean_filename(file.file_name)}\n</a></b>"
-        sent = None
-        try:
-            if imdb and imdb.get('poster'):
-                try:
-                    if TMDB_POSTER:
-                        photo = imdb.get('backdrop') if imdb.get('backdrop') and LANDSCAPE_POSTER else imdb.get('poster')
-                    else:
+                    sent = None
+            try:
+                if imdb and imdb.get('poster'):
+                    try:
+                        if TMDB_POSTER:
+                            photo = imdb.get('backdrop')
+                        else:
+                            photo = imdb.get('poster')
+                        sent = await message.reply_photo(photo=photo, caption=cap)
+                    except Exception as e:
                         photo = imdb.get('poster')
-                sent = await message.reply_photo(photo=photo, caption=cap)
-                except Exception as e:
-                    photo = imdb.get('poster')
                     sent = await rating=imdb['rating'],message.reply_photo(photo=photo, caption=cap)
                     if m:
                         await m.delete()
