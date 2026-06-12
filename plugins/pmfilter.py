@@ -1056,7 +1056,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("📌 Not Released 📌",
                                  callback_data=f"Not_Released#{from_user}"),
             InlineKeyboardButton("♨️Type Correct Spelling♨️",
-                                 callback_data=f"Type_Correct_Spelling#{from_user}"
+                                 callback_data=f"Type_Correct_Spelling#{from_user}")
         ], [
             InlineKeyboardButton("⚜️ Not Available In The Hindi ⚜️",
                                  callback_data=f"Not_Available_In_The_Hindi#{from_user}")
