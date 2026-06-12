@@ -1950,49 +1950,37 @@ async def auto_filter(client, msg, spoll=False):
                     for idx, file in enumerate(files, start=1):
                         cap += f"<b>\n{idx}. <a href='https://telegram.me/{temp.U_NAME}?start=file_{message.chat.id}_{file.file_id}'>[{get_size(file.file_size)}] {clean_filename(file.file_name)}\n</a></b>"
                     sent = None
+    sent = None
+    try:
+        if imdb and imdb.get('poster'):
             try:
-                if imdb and imdb.get('poster'):
-                    try:
-                        if TMDB_POSTER:
-                            photo = imdb.get('backdrop')
-                        else:
-                            photo = imdb.get('poster')
-                        sent = await message.reply_photo(photo=photo, caption=cap)
-                    except Exception as e:
-                        photo = imdb.get('poster')
-                    sent = await message.reply_photo(photo=photo, caption=cap)
-                    if m:
-                        await m.delete()
-            except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
-                    pic = imdb.get('poster')
-                    poster = pic.replace('.jpg', "._V1_UX360.jpg")
-                    sent = await message.reply_photo(photo=poster, caption=cap, reply_markup=InlineKeyboardMarkup(btn), parse_mode=enums.ParseMode.HTML)
-                    if m:
-                        await m.delete()
+                photo = imdb['poster']
+                cap = f"**{title}**\n\nRating: {imdb['rating']}\nYear: {imdb['year']}"
+                sent = await message.reply_photo(photo=photo, caption=cap)
             except Exception as e:
-                    logger.exception(e)
-                    sent = await message.reply_text(text=cap, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=True, parse_mode=enums.ParseMode.HTML)
-            else:
-                sent = await message.reply_text(text=cap, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=True, parse_mode=enums.ParseMode.HTML)
-                if m:
-                    await m.delete()
-            except Exception as e:
-            logger.exception("Failed to send result: %s", e)
-            return
-        try:
-            if settings.get('auto_delete'):
-                asyncio.create_task(_schedule_delete(sent, message, DELETE_TIME))
-        except KeyError:
-            try:
-                await save_group_settings(message.chat.id, 'auto_delete', True)
-            except Exception:
-                pass
-            asyncio.create_task(_schedule_delete(sent, message, DELETE_TIME))
-        return
+                photo = imdb.get('poster')
+                sent = await message.reply_photo(photo=photo, caption=cap)
+        if m:
+            await m.delete()
+    except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
+        pic = imdb.get('poster')
+        sent = await message.reply_photo(photo=pic, caption=cap)
     except Exception as e:
-        logger.exception(e)
+        logger.exception("Failed to send result: %s", e)
         return
 
+    try:
+        if settings.get('auto_delete'):
+            asyncio.create_task(_schedule_delete(sent, message, DELETE_TIME))
+    except KeyError:
+        try:
+            await save_group_settings(message.chat.id, 'auto_delete', True)
+        except Exception:
+            pass
+        asyncio.create_task(_schedule_delete(sent, message, DELETE_TIME))
+    except Exception as e:
+        logger.exception(e)
+    return
 async def ai_spell_check(chat_id, wrong_name):
     async def search_movie(wrong_name):
         search_results = imdb.search_movie(wrong_name)
