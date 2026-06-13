@@ -473,24 +473,8 @@ async def start(client, message):
                 pass
 
 async def stream_buttons(user_id: int, file_id: str):
-    if STREAM_MODE and not PREMIUM_STREAM_MODE:
-        return [
-            [InlineKeyboardButton('🚀 FAST DOWNLOAD / WATCH ONLINE 🚀', callback_data=f'generate_stream_link:{file_id}')],
-            [InlineKeyboardButton('📺 VIEW AUDIO & SUBS INFO ℹ️', callback_data=f'extract_data:{file_id}')]
-        ]
-    elif STREAM_MODE and PREMIUM_STREAM_MODE:
-        if not await db.has_premium_access(user_id):
-            return [
-                [InlineKeyboardButton('🚀 FAST DOWNLOAD / WATCH ONLINE 🚀', callback_data='prestream')],
-                [InlineKeyboardButton('📺 VIEW AUDIO & SUBS INFO ℹ️', callback_data='prestream')]
-            ]
-        else:
-            return [
-                [InlineKeyboardButton('🚀 FAST DOWNLOAD / WATCH ONLINE 🚀', callback_data=f'generate_stream_link:{file_id}')],
-                [InlineKeyboardButton('📺 VIEW AUDIO & SUBS INFO ℹ️', callback_data=f'extract_data:{file_id}')]
-            ]
-    else:
-        return []
+    return []
+
 
 @Client.on_message(filters.command('logs') & filters.user(ADMINS))
 async def log_file(bot, message):
