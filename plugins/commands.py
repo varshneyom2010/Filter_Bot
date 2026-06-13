@@ -448,7 +448,7 @@ async def start(client, message):
             cover=cover,
             caption=f_caption,
             protect_content=settings.get('file_secure', PROTECT_CONTENT),
-            reply_markup=InlineKeyboardMarkup(btn) if btn else None
+            reply_markup=None
         )
         
         k = await msg.reply(script.DEL_MSG.format(get_time(DELETE_TIME)),
