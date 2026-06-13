@@ -448,7 +448,7 @@ async def start(client, message):
             cover=cover,
             caption=f_caption,
             protect_content=settings.get('file_secure', PROTECT_CONTENT),
-            reply_markup=None
+            reply_markup=InlineKeyboardMarkup(btn) if btn else None
         )
         
         k = await msg.reply(script.DEL_MSG.format(get_time(DELETE_TIME)),
@@ -473,8 +473,10 @@ async def start(client, message):
                 pass
 
 async def stream_buttons(user_id: int, file_id: str):
-    return []
-
+    return [
+        [InlineKeyboardButton('🚀 FAST DOWNLOAD / WATCH ONLINE 🚀', callback_data=f'generate_stream_link:{file_id}')],
+        [InlineKeyboardButton('📺 VIEW AUDIO & SUBS INFO ℹ️', callback_data=f'extract_data:{file_id}')]
+    ]
 
 @Client.on_message(filters.command('logs') & filters.user(ADMINS))
 async def log_file(bot, message):
