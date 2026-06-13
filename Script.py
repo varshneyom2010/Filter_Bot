@@ -1,5 +1,5 @@
 class script(object):
-    START_TXT = """<b><u>🚩 ᴊᴀɪ ꜱʜʀɪ ʀᴀᴍ 🚩</u></b>
+    START_TXT = """<b><u>🚩 𝗛𝗔𝗥💖𝗛𝗔𝗥💖𝗠𝗔𝗛𝗔𝗗𝗘𝗩 🚩</u></b>
 
 <b>ʜᴇʏ {}, {}</b>
 
@@ -7,7 +7,7 @@ class script(object):
 """
 
 
-    GSTART_TXT = """<b>🚩 ᴊᴀɪ ꜱʜʀɪ ʀᴀᴍ 🚩</b>
+    GSTART_TXT = """<b>🚩 𝗛𝗔𝗥💖𝗛𝗔𝗥💖𝗠𝗔𝗛𝗔𝗗𝗘𝗩 🚩</b>
 
 <b>ʜᴇʏ {},</b>
 
@@ -37,10 +37,10 @@ class script(object):
     ABOUT_TXT = """<b>╭────[ ᴍʏ ᴅᴇᴛᴀɪʟs ]────⍟
 ├⍟ Mʏ Nᴀᴍᴇ : <a href=https://t.me/{}>{}</a>
 ├⍟ Dᴇᴠᴇʟᴏᴘᴇʀ : <a href={}>ᴏᴡɴᴇʀ</a> 
-├⍟ Lɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢʀᴀᴍ</a>
-├⍟ Lᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org/download/releases/3.0/'>ᴘʏᴛʜᴏɴ 𝟹</a> 
-├⍟ Dᴀᴛᴀʙᴀsᴇ : <a href='https://www.mongodb.com/'>ᴍᴏɴɢᴏ ᴅʙ</a> 
-├⍟ Bᴏᴛ Sᴇʀᴠᴇʀ : <a href='https://heroku.com/'>ʜᴇʀᴏᴋᴜ</a> 
+├⍟ Lɪʙʀᴀʀʏ : ᴘʏʀᴏɢʀᴀᴍ
+├⍟ Lᴀɴɢᴜᴀɢᴇ : ᴘʏᴛʜᴏɴ 
+├⍟ Dᴀᴛᴀʙᴀsᴇ : ᴍᴏɴɢᴏ ᴅʙ
+├⍟ Bᴏᴛ Sᴇʀᴠᴇʀ : ʜᴇʀᴏᴋᴜ
 ├⍟ Bᴜɪʟᴅ Sᴛᴀᴛᴜs : ᴠ1.4 [ ꜱᴛᴀʙʟᴇ ]
 ╰───────────────⍟</b>"""
     RESTART_TXT = """
