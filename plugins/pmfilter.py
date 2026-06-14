@@ -27,6 +27,8 @@ logger.setLevel(logging.ERROR)
 
 tracemalloc.start()
 
+STAR_PREMIUM_PLANS = ["1_month", "3_months", "6_months"]
+OWNER_UPI_ID = "aapka_upi_id@upi"
 
 TIMEZONE = "Asia/Kolkata"
 BUTTON = {}
