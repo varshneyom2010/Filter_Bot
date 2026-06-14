@@ -145,8 +145,6 @@ Nᴀᴍᴇ - {}
 
 <b>यह मूवी हमारे 𝗗𝗔𝗧𝗔𝗕𝗔𝗦𝗘 में उपलब्ध नहीं है।</b>
 
-<a href='https://t.meSmartboy_009'>📢 Request to Admin</a>"""
-
     DEL_MSG = """⚠️ ᴛʜɪꜱ ᴍᴏᴠɪᴇ ꜰɪʟᴇ/ᴠɪᴅᴇᴏ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ <b><u><code>{}</code></u></b>
 
 <blockquote expandable><b><i>ᴘʟᴇᴀꜱᴇ ꜰᴏʀᴡᴀʀᴅ ᴛʜɪꜱ ꜰɪʟᴇ ᴛᴏ ꜱᴏᴍᴇᴡʜᴇʀᴇ ᴇʟꜱᴇ & ꜱᴛᴀʀᴛ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴛʜᴇʀᴇ</i></b></blockquote>"""
@@ -161,8 +159,6 @@ EXAMPLE : Jawan or Jawan 2023
 
 <b>SERIES REQUEST FORMAT 👇</b>
 EXAMPLE : Loki S01 or Loki S01E04
-
-<a href='https://t.meSmartboy_009'>📢 Request to Admin</a>"""
     
     I_CUD_NT = """<b>ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏ ᴍᴏᴠɪᴇ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ {}.
 
