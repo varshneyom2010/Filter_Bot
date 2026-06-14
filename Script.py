@@ -140,9 +140,10 @@ Nᴀᴍᴇ - {}
     PRE_STREAM_ALERT = """⚠️ ᴘʀᴇᴍɪᴜᴍ ᴄᴏɴᴛᴇɴᴛ ❗  
 🔓 ᴜɴʟᴏᴄᴋ ɪᴛ ʙʏ ᴜᴘɢʀᴀᴅɪɴɢ ᴛᴏ ᴘʀᴇᴍɪᴜᴍ"""
 
-    CUDNT_FND = SPELLING_ERROR_TXT = """<b>SORRY NO FILES WERE FOUND FOR YOUR REQUEST 😕</b>
+    CUDNT_FND = None
+    SPELLING_ERROR_TXT = """<b>SORRY NO FILES WERE FOUND FOR YOUR REQUEST 😕</b>
 
-<b>यह मूवी हमारे डेटाबेस में उपलब्ध नहीं है।</b>
+<b>यह मूवी हमारे 𝗗𝗔𝗧𝗔𝗕𝗔𝗦𝗘 में उपलब्ध नहीं है।</b>
 
 <a href='https://t.meSmartboy_009'>📢 Request to Admin</a>"""
 
