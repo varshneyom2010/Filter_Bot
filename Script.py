@@ -295,7 +295,7 @@ Nᴀᴍᴇ : {}
 
 Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
     
-    CAPTION = """CAPTION = """<b>{file_name}</b>\n\n<b>"""
+    CAPTION = """<b>{file_name}</b>\n\n<b>"""
 
     
     MOVIE_UPDATE_NOTIFY_TXT = """
