@@ -315,9 +315,9 @@ Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
 """
 
 
-    IMDB_TEMPLATE_TXT = """<b><a href={url}>{title} (<a href={url}/releaseinfo>{year}</a>)
+    IMDB_TEMPLATE_TXT = """<b>{title} ({year})</b>
 
-ʀᴀᴛɪɴɢ : <a href={url}/ratings>{rating}</a>
+ʀᴀᴛɪɴɢ : {rating}
 ɢᴇɴʀᴇ : {genres}
 ᴀᴜᴅɪᴏ : {languages}
 
