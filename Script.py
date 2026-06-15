@@ -295,7 +295,7 @@ Nᴀᴍᴇ : {}
 
 Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
     
-    CAPTION = """<b><a href="https://t.me/">{file_name}</a></b>\n\n<b>⚜️ Powered By : <a href="https://t.me/Filmy_DuniyaBot">[ OWNER ]</a></b>"""
+    CAPTION = """CAPTION = """<b>{file_name}</b>\n\n<b>"""
 
     
     MOVIE_UPDATE_NOTIFY_TXT = """
