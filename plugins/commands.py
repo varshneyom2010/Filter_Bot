@@ -121,7 +121,6 @@ async def start(client, message):
                     ],[
                         InlineKeyboardButton('ᴜᴘɢʀᴀᴅᴇ 🎟', callback_data="premium_info")
                       ]]
-            photo=PIC,
             reply_markup = InlineKeyboardMarkup(buttons)
             current_time = datetime.now(pytz.timezone(TIMEZONE))
             curr_time = current_time.hour        
