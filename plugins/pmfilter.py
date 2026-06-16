@@ -1835,11 +1835,7 @@ async def auto_filter(client, msg, spoll=False):
                                "ʀᴇᴍᴏᴠᴇ ᴀᴅs", url=f"https://t.me/{temp.U_NAME}?start=premium"),
                            InlineKeyboardButton(
                                "Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}")
-                       ],[
-                           InlineKeyboardButton("📝𝗥𝗘𝗤𝗨𝗘𝗦𝗧 𝗛𝗘𝗥𝗘", url="https://t.meFilmy_DuniyaBot"),
-                           InlineKeyboardButton("👥 Groups", url="https://t.me/hd_movie_zonee")
-                       ],[
-                           InlineKeyboardButton("🚀 Share With Friends", switch_inline_query="")
+
                        ])
         else:
             btn = []
