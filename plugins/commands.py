@@ -13,7 +13,7 @@ from datetime import datetime
 from database.refer import referdb
 from database.config_db import mdb
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, ReplyKeyboardMarkup
-from pyrogram import Client, filters, enums, StopPropagation
+from pyrogram import Client, filters, enums, StopPropagation, CallbackQuery
 from pyrogram.errors import FloodWait, UserNotParticipant , ChannelInvalid, PeerIdInvalid
 from database.ia_filterdb import Media, Media2, get_file_details, unpack_new_file_id, get_bad_files, save_file
 from database.users_chats_db import db
@@ -74,7 +74,10 @@ async def start(client, message):
                 verifiedfiles = f"https://telegram.me/{temp.U_NAME}?start=file_{grp_id}_{file_id}"
             await client.send_message(settings['log'], script.VERIFIED_LOG_TEXT.format(m.from_user.mention, user_id, datetime.now(pytz.timezone('Asia/Kolkata')).strftime('%d %B %Y'), num))
             btn = [[
-                InlineKeyboardButton("✅ ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ɢᴇᴛ ꜰɪʟᴇ ✅", url=verifiedfiles),
+                InlineKeyboardButton("✅ ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ɢᴇᴛ ꜰɪʟᴇ ✅", url=verifiedfiles)
+            ]]
+            btn = [[
+                InlineKeyboardButton("👉 ʜᴏᴡ ᴛᴏ ᴠᴇʀɪꜰʏ 👈", callback_data="show_steps")
             ]]
             reply_markup=InlineKeyboardMarkup(btn)
             dlt=await m.reply_photo(
@@ -1479,3 +1482,41 @@ async def clean_groups_handler(client, message):
         except Exception as e:
             print(f'Error in clean_groups loop: {e}')
     await msg.edit(f'**Clean Groups Complete**\n\nTotal Processed: {processed}\nDeleted: {deleted_count}')
+
+# यह बटन क्लिक करने पर पहले पॉप-अप अलर्ट और स्टेप्स दिखाएगा
+@Client.on_callback_query(filters.regex("show_steps"))
+async def callback_steps(client, callback_query: CallbackQuery):
+    # यूजर की स्क्रीन पर अलर्ट दिखेगा
+    await callback_query.answer(
+        "⚠️ ध्यान दें: मूवी डाउनलोड करने के लिए पहले यह वेरिफिकेशन पूरा करें!", 
+        show_alert=True
+    )
+    
+    # यहाँ वेरिफिकेशन के आसान स्टेप्स हैं
+    steps_text = (
+        "📥 **मूवी डाउनलोड करने के स्टेप्स:**\n\n"
+        "1️⃣ नीचे दिए गए **'ओपन लिंक'** बटन पर क्लिक करें।\n"
+        "2️⃣ 10 सेकंड का टाइमर खत्म होने का इंतजार करें।\n"
+        "3️⃣ **'I'm not a robot'** पर टिक करें (कैप्चा भरें)।\n"
+        "4️⃣ सबसे नीचे जाकर **'Open / Continue'** पर क्लिक करें।\n\n"
+        "🚨 *वेरिफिकेशन पूरा करते ही मूवी आ जाएगी!*"
+    )
+    
+    # आपकी फाइल में बने पहले वाले बटन से gplinks का असली शॉर्ट लिंक निकालना
+    gplink_url = "https://gplinks.com"
+    original_markup = callback_query.message.reply_markup
+    
+    if original_markup and original_markup.inline_keyboard:
+        try:
+            # यह कोड आपके पुराने बटन से सीधे gplinks का लिंक निकाल लेगा
+            gplink_url = original_markup.inline_keyboard[0][0].url
+        except Exception:
+            pass
+
+    # मैसेज बदलकर स्टेप्स और असली gplinks वाला बटन दिखाएगा
+    await callback_query.message.edit_text(
+        text=steps_text,
+        reply_markup=InlineKeyboardMarkup([
+            [InlineKeyboardButton("🔗 यहाँ क्लिक करके ओपन करें", url=gplink_url)]
+        ])
+    )
