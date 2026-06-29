@@ -92,13 +92,13 @@ async def start(client, message):
             return         
         if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
             buttons = [[
-                        InlineKeyboardButton('❤️ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ❤️', url=f'http://t.me/{temp.U_NAME}?startgroup=true', "style":"primary")
+                        InlineKeyboardButton('❤️ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ❤️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                     ],[
-                        InlineKeyboardButton('🍁 Update Group 🍁', url='https://t.me/hd_movie_zonee', "style":"danger")
+                        InlineKeyboardButton('🍁 Update Group 🍁', url='https://t.me/hd_movie_zonee')
                     ],[
-                        InlineKeyboardButton('👑 𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥 👑', url='https://t.me/Filmy_DuniyaBot', "style":"success")
+                        InlineKeyboardButton('👑 𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥 👑', url='https://t.me/Filmy_DuniyaBot')
                       ]]
-            reply_markup = {"inline_keyboard": buttons}
+            reply_markup = InlineKeyboardMarkup(buttons)
             await message.reply(script.GSTART_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, disable_web_page_preview=True)
             await sticker.delete()
             await asyncio.sleep(2) 
@@ -112,17 +112,17 @@ async def start(client, message):
             await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
         if len(message.command) != 2:
             buttons = [[
-                        InlineKeyboardButton('🔰 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🔰', url=f'http://t.me/{temp.U_NAME}?startgroup=true', "style":"primary")
+                        InlineKeyboardButton('🔰 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🔰', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                     ],[
-                        InlineKeyboardButton('👑 𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥 👑', url='https://t.me/Filmy_DuniyaBot', "style":"success")
+                        InlineKeyboardButton('👑 𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥 👑', url='https://t.me/Filmy_DuniyaBot')
                     ],[
-                        InlineKeyboardButton(' ʜᴇʟᴘ 📢', callback_data='help', "style":"danger"),
-                        InlineKeyboardButton(' ᴀʙᴏᴜᴛ 📖', callback_data='about', "style":"danger")
+                        InlineKeyboardButton(' ʜᴇʟᴘ 📢', callback_data='help'),
+                        InlineKeyboardButton(' ᴀʙᴏᴜᴛ 📖', callback_data='about')
                     ],[
-                        InlineKeyboardButton('🍁 Update Group 🍁', url='https://t.me/hd_movie_zonee', "style":"primary"),
-                        InlineKeyboardButton('ᴛᴏᴘ sᴇᴀʀᴄʜɪɴɢ ⭐', callback_data="topsearch", "style":"primary"),
+                        InlineKeyboardButton('🍁 Update Group 🍁', url='https://t.me/hd_movie_zonee'),
+                        InlineKeyboardButton('ᴛᴏᴘ sᴇᴀʀᴄʜɪɴɢ ⭐', callback_data="topsearch"),
                       ]]
-            reply_markup = {"inline_keyboard": buttons}
+            reply_markup = InlineKeyboardMarkup(buttons)
             current_time = datetime.now(pytz.timezone(TIMEZONE))
             curr_time = current_time.hour        
             if curr_time < 12:
@@ -147,17 +147,17 @@ async def start(client, message):
 
         if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
             buttons = [[
-                        InlineKeyboardButton('🔰 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🔰', url=f'http://t.me/{temp.U_NAME}?startgroup=true', "style":"primary")
+                        InlineKeyboardButton('🔰 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🔰', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                     ],[
-                        InlineKeyboardButton('👑 𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥 👑', url='https://t.me/Filmy_DuniyaBot', "style":"success")
+                        InlineKeyboardButton('👑 𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥 👑', url='https://t.me/Filmy_DuniyaBot')
                     ],[
-                        InlineKeyboardButton(' ʜᴇʟᴘ 📢', callback_data='help', "style":"danger"),
-                        InlineKeyboardButton(' ᴀʙᴏᴜᴛ 📖', callback_data='about', "style":"danger")
+                        InlineKeyboardButton(' ʜᴇʟᴘ 📢', callback_data='help'),
+                        InlineKeyboardButton(' ᴀʙᴏᴜᴛ 📖', callback_data='about')
                     ],[
-                        InlineKeyboardButton('🍁 Update Group 🍁', url='https://t.me/hd_movie_zonee', "style":"primary"),
-                        InlineKeyboardButton('ᴛᴏᴘ sᴇᴀʀᴄʜɪɴɢ ⭐', callback_data="topsearch", "style":"primary"),
+                        InlineKeyboardButton('🍁 Update Group 🍁', url='https://t.me/hd_movie_zonee'),
+                        InlineKeyboardButton('ᴛᴏᴘ sᴇᴀʀᴄʜɪɴɢ ⭐', callback_data="topsearch"),
                       ]]
-            reply_markup = {"inline_keyboard": buttons}
+            reply_markup = InlineKeyboardMarkup(buttons)
             current_time = datetime.now(pytz.timezone(TIMEZONE))
             curr_time = current_time.hour        
             if curr_time < 12:
