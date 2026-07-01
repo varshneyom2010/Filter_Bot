@@ -1,18 +1,27 @@
 class script(object):
     START_TXT = """<b><u>🚩 𝗛𝗔𝗥 𝗛𝗔𝗥 𝗠𝗔𝗛𝗔𝗗𝗘𝗩 🚩</u></b>
 
-<b>ʜᴇʏ {}, {}</b>
+👋 Hᴇʟʟᴏ {mention}
+🤖 ɪ ᴀᴍ <a href=https://t.me/{}>{}</a>
+   
+✨ <b>Sᴇᴀʀᴄʜ Yᴏᴜʀ Mᴏᴠɪᴇ Nᴀᴍᴇ Wɪᴛʜ Cᴏʀʀᴇᴄᴛ Sᴩᴇʟʟɪɴɢ Aɴᴅ Eɴᴊᴏʏ...</b>😃
 
-<b>🤖 ɪ ᴀᴍ <a href=https://t.me/{}>{}</a>, ᴛʜᴇ ᴍᴏꜱᴛ ᴘᴏᴡᴇʀꜰᴜʟ ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴘʀᴇᴍɪᴜᴍ ꜰᴇᴀᴛᴜʀᴇꜱ.</b>
+🥳 <b>Sʜᴀʀᴇ ᴛʜɪꜱ Bᴏᴛ Tᴏ Aʟʟ Yᴏᴜʀ Fʀɪᴇɴᴅꜱ Aɴᴅ Fᴀᴍɪʟʏ</b>✨
+
+<blockquote><b>ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : ⌈ <a href="https://t.me/Dark_Venommm">☠️➳ᴹᴿ• ᭄​Dคrk ۷ɛŋơɱ ☠️</a> ⌋</b></blockquote>
 """
 
 
     GSTART_TXT = """<b>🚩𝗛𝗔𝗥 𝗛𝗔𝗥 𝗠𝗔𝗛𝗔𝗗𝗘𝗩🚩</b>
 
-<b>ʜᴇʏ {},</b>
+👋 Hᴇʟʟᴏ {mention}
+🤖 ɪ ᴀᴍ <a href=https://t.me/{}>{}</a>
+   
+✨ <b>Sᴇᴀʀᴄʜ Yᴏᴜʀ Mᴏᴠɪᴇ Nᴀᴍᴇ Wɪᴛʜ Cᴏʀʀᴇᴄᴛ Sᴩᴇʟʟɪɴɢ Aɴᴅ Eɴᴊᴏʏ...</b>😃
 
-<b>🤖 ɪ ᴀᴍ <a href=https://t.me/{}>{}</a>, ᴛʜᴇ ᴍᴏꜱᴛ ᴘᴏᴡᴇʀꜰᴜʟ ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴘʀᴇᴍɪᴜᴍ ꜰᴇᴀᴛᴜʀᴇꜱ.</b>"""
+🥳 <b>Sʜᴀʀᴇ ᴛʜɪꜱ Bᴏᴛ Tᴏ Aʟʟ Yᴏᴜʀ Fʀɪᴇɴᴅꜱ Aɴᴅ Fᴀᴍɪʟʏ</b>✨
 
+<blockquote><b>ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : ⌈ <a href="https://t.me/Dark_Venommm">☠️➳ᴹᴿ• ᭄​Dคrk ۷ɛŋơɱ ☠️</a> ⌋</b></blockquote>"""
     
     HELP_TXT = """<b>
     
