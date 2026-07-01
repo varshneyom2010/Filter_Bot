@@ -1516,3 +1516,29 @@ async def callback_steps(client, callback_query: CallbackQuery):
             [InlineKeyboardButton("🔗 यहाँ क्लिक करके ओपन करें", url=gplink_url)]
         ])
     )
+from pyrogram import Client, filters
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+
+@Client.on_message(filters.left_chat_member)
+async def goodbye_message(client, message):
+    user_name = message.left_chat_member.first_name
+    
+    text = (
+        f"**{user_name}** आपने **Movie Group 🖊** छोड़ दिया ! 🥺\n\n"
+        "हमारी सेवा का उपयोग करने के लिए धन्यवाद 😊"
+        "❤️ Good Bye 👋"
+    )
+    
+    reply_markup = InlineKeyboardMarkup([
+        [InlineKeyboardButton("VIEW GROUP 👥", url="https://t.me/hd_movie_zonee")]
+    ])
+    
+    try:
+        await message.reply_text(
+            text=text,
+            reply_markup=reply_markup,
+            disable_web_page_preview=True
+        )
+        await message.delete() # यह लाइन ग्रुप से टेलीग्राम का डिफ़ॉल्ट 'left group' मैसेज डिलीट कर देगी
+    except Exception as e:
+        print(f"Error in goodbye: {e}")
