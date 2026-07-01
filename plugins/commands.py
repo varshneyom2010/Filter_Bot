@@ -157,7 +157,7 @@ async def start(client, message):
                         InlineKeyboardButton('🍁 Update Group 🍁', url='https://t.me/hd_movie_zonee'),
                         InlineKeyboardButton('ᴛᴏᴘ sᴇᴀʀᴄʜɪɴɢ ⭐', callback_data="topsearch"),
                       ]]
-                        reply_markup = InlineKeyboardMarkup(buttons)
+            reply_markup = InlineKeyboardMarkup(buttons)
             current_time = datetime.now(pytz.timezone(TIMEZONE))
             curr_time = current_time.hour        
             if curr_time < 12:
