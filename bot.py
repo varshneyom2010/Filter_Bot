@@ -10,7 +10,7 @@ from pathlib import Path
 import importlib.util
 import pytz
 from aiohttp import web
-from database.ia_filterdb import Media, Media2
+from database.ia_filterdb import Media
 from database.users_chats_db import db
 from info import *
 from utils import temp
