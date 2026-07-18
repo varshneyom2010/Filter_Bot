@@ -8,7 +8,7 @@ class script(object):
 
 🥳 <b>Sʜᴀʀᴇ ᴛʜɪꜱ Bᴏᴛ Tᴏ Aʟʟ Yᴏᴜʀ Fʀɪᴇɴᴅꜱ Aɴᴅ Fᴀᴍɪʟʏ</b>✨
 
-<blockquote><b>ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : ⌈ <a href="https://t.me/Dark_Venommm">🅟︎🅡︎🅸︎🅝︎🅒︎🅔︎☠️</a> ⌋</b></blockquote>
+<blockquote><b>ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : ⌈ <a href="https://t.me/The_silent_Hacker">🅗︎🅐︎🅲︎🅚︎🅔︎🅡︎☠️</a> ⌋</b></blockquote>
 """
 
 
@@ -21,7 +21,7 @@ class script(object):
 
 🥳 <b>Sʜᴀʀᴇ ᴛʜɪꜱ Bᴏᴛ Tᴏ Aʟʟ Yᴏᴜʀ Fʀɪᴇɴᴅꜱ Aɴᴅ Fᴀᴍɪʟʏ</b>✨
 
-<blockquote><b>ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : ⌈ <a href="https://t.me/Dark_Venommm">🅟︎🅡︎🅸︎🅝︎🅒︎🅔︎☠️</a> ⌋</b></blockquote>"""
+<blockquote><b>ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : ⌈ <a href="https://t.me/The_silent_Hacker">🅗︎🅐︎🅲︎🅚︎🅔︎🅡︎</a> ⌋</b></blockquote>"""
     
     HELP_TXT = """<b>
     
