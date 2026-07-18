@@ -108,9 +108,9 @@ THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "43200"))
 # ============================
 # Channel & Group Links Configuration
 # ============================
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/hd_movie_zonee') # Group link for the bot
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+KWfEIt2WUKtlMWFl') # Group link for the bot
 OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Filmy_DuniyaBot') # Owner link for the bot
-UPDATE_CHNL_LNK = environ.get('UPDATE_CHNL_LNK', 'https://t.me/hd_movie_zonee') # Update channel link for the bot
+UPDATE_CHNL_LNK = environ.get('UPDATE_CHNL_LNK', 'https://t.me/Cinema_Hall2') # Update channel link for the bot
 
 # ============================
 # User Configuration
@@ -128,8 +128,8 @@ MAX_B_TN = environ.get("MAX_B_TN", "5") # Maximum number of buttons in a row (de
 PORT = int(environ.get("PORT", "8080"))  # Port for the web server (default: 8080)
 MSG_ALRT = environ.get('MSG_ALRT', 'Share & Support Us ♥️') # Alert message for users
 DELETE_TIME = int(environ.get("DELETE_TIME", "300"))  #  deletion time in seconds (default: 5 minutes). Adjust as per your needs.
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<blockquote>{file_name}</blockquote>\n\n📦 <b>Size:</b> {file_size}\n\n➡️ <b>Join:</b> @hd_movie_zonee")
-BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "<blockquote>{file_name}</blockquote>\n\n📦 <b>Size:</b> {file_size}\n\n➡️ <b>Join:</b> @hd_movie_zonee")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<blockquote>{file_name}</blockquote>\n\n📦 <b>Size:</b> {file_size}\n\n➡️ <b>Join:</b> @Cinema_Hall2")
+BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "<blockquote>{file_name}</blockquote>\n\n📦 <b>Size:</b> {file_size}\n\n➡️ <b>Join:</b> @Cinema_Hall2")
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", f"{script.IMDB_TEMPLATE_TXT}")     # Custom IMDB template 
 MAX_LIST_ELM = int(environ.get("MAX_LIST_ELM") or 10) or None # Maximum number of elements in a list (default: 10, set 0 for no limit)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))  # Index Request Channel ID (make sure bot is admin)
