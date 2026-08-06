@@ -2,26 +2,26 @@ class script(object):
     START_TXT = """<b><u>🚩 𝗛𝗔𝗥 𝗛𝗔𝗥 𝗠𝗔𝗛𝗔𝗗𝗘𝗩 🚩</u></b>
 
 👋 Hᴇʟʟᴏ {}
-🤖 ɪ ᴀᴍ <a href="https://t.me/filmy_duniya1bot">💐𝐑𝐎𝐙𝐘 𝐁𝐎𝐓🌹</a></b>
+🤖 ɪ ᴀᴍ <a href="https://t.me/CinemasHallBot">𝐂ɪɴᴇᴍᴀꜱ 𝐇ᴀʟʟ</a></b>
    
 ✨ <b>Sᴇᴀʀᴄʜ Yᴏᴜʀ Mᴏᴠɪᴇ Nᴀᴍᴇ Wɪᴛʜ Cᴏʀʀᴇᴄᴛ Sᴩᴇʟʟɪɴɢ Aɴᴅ Eɴᴊᴏʏ...</b>😃
 
 🥳 <b>Sʜᴀʀᴇ ᴛʜɪꜱ Bᴏᴛ Tᴏ Aʟʟ Yᴏᴜʀ Fʀɪᴇɴᴅꜱ Aɴᴅ Fᴀᴍɪʟʏ</b>✨
 
-<blockquote><b>ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : ⌈ <a href="https://t.me/The_silent_Hacker">🅗︎🅐︎🅲︎🅚︎🅔︎🅡︎☠️</a> ⌋</b></blockquote>
+<blockquote><b>ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : ⌈ <a href="https://t.me/Nothing_HackerBot">🅗︎🅐︎🅲︎🅚︎🅔︎🅡︎☠️</a> ⌋</b></blockquote>
 """
 
 
     GSTART_TXT = """<b>🚩𝗛𝗔𝗥 𝗛𝗔𝗥 𝗠𝗔𝗛𝗔𝗗𝗘𝗩🚩</b>
 
 👋 Hᴇʟʟᴏ {}
-🤖 ɪ ᴀᴍ <a href="https://t.me/filmy_duniya1bot">💐𝐑𝐎𝐙𝐘 𝐁𝐎𝐓🌹</a></b>
+🤖 ɪ ᴀᴍ <a href="https://t.me/CinemasHallBot">𝐂ɪɴᴇᴍᴀꜱ 𝐇ᴀʟʟ</a></b>
    
 ✨ <b>Sᴇᴀʀᴄʜ Yᴏᴜʀ Mᴏᴠɪᴇ Nᴀᴍᴇ Wɪᴛʜ Cᴏʀʀᴇᴄᴛ Sᴩᴇʟʟɪɴɢ Aɴᴅ Eɴᴊᴏʏ...</b>😃
 
 🥳 <b>Sʜᴀʀᴇ ᴛʜɪꜱ Bᴏᴛ Tᴏ Aʟʟ Yᴏᴜʀ Fʀɪᴇɴᴅꜱ Aɴᴅ Fᴀᴍɪʟʏ</b>✨
 
-<blockquote><b>ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : ⌈ <a href="https://t.me/The_silent_Hacker">🅗︎🅐︎🅲︎🅚︎🅔︎🅡︎</a> ⌋</b></blockquote>"""
+<blockquote><b>ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : ⌈ <a href="https://t.me/Nothing_HackerBot">🅗︎🅐︎🅲︎🅚︎🅔︎🅡︎</a> ⌋</b></blockquote>"""
     
     HELP_TXT = """<b>
     
