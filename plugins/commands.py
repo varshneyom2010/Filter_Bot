@@ -94,9 +94,9 @@ async def start(client, message):
             buttons = [[
                         InlineKeyboardButton('❤️ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ❤️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                     ],[
-                        InlineKeyboardButton('🍁 Update Group🍁', url='https://t.me/+KWfEIt2WUKtlMWFl')
+                        InlineKeyboardButton('🍁 Update Group🍁', url='https://t.me/AL_Theater')
                     ],[
-                        InlineKeyboardButton('👑 𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥 👑', url='https://t.me/Filmy_DuniyaBot')
+                        InlineKeyboardButton('👑 𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥 👑', url='https://t.me/Nothing_HackerBot')
                       ]]
             reply_markup = InlineKeyboardMarkup(buttons)
             await message.reply(script.GSTART_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, disable_web_page_preview=True)
@@ -114,12 +114,12 @@ async def start(client, message):
             buttons = [[
                         InlineKeyboardButton('🔰 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🔰', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                     ],[
-                        InlineKeyboardButton('👑 𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥 👑', url='https://t.me/Filmy_DuniyaBot')
+                        InlineKeyboardButton('👑 𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥 👑', url='https://t.me/Nothing_HackerBot')
                     ],[
                         InlineKeyboardButton(' ʜᴇʟᴘ 📢', callback_data='help'),
                         InlineKeyboardButton(' ᴀʙᴏᴜᴛ 📖', callback_data='about')
                     ],[
-                        InlineKeyboardButton('🍁 Update Group 🍁', url='https://t.me/+KWfEIt2WUKtlMWFl'),
+                        InlineKeyboardButton('🍁 Update Group 🍁', url='https://t.me/AL_Theater'),
                         InlineKeyboardButton('ᴛᴏᴘ sᴇᴀʀᴄʜɪɴɢ ⭐', callback_data="topsearch"),
                       ]]
             reply_markup = InlineKeyboardMarkup(buttons)
@@ -149,12 +149,12 @@ async def start(client, message):
             buttons = [[
                         InlineKeyboardButton('🔰 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🔰', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                     ],[
-                        InlineKeyboardButton('👑 𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥 👑', url='https://t.me/Filmy_DuniyaBot')
+                        InlineKeyboardButton('👑 𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥 👑', url='https://t.me/Nothing_HackerBot')
                     ],[
                         InlineKeyboardButton(' ʜᴇʟᴘ 📢', callback_data='help'),
                         InlineKeyboardButton(' ᴀʙᴏᴜᴛ 📖', callback_data='about')
                     ],[
-                        InlineKeyboardButton('🍁 Update Group 🍁', url='https://t.me/+KWfEIt2WUKtlMWFl'),
+                        InlineKeyboardButton('🍁 Update Group 🍁', url='https://t.me/AL_Theater'),
                         InlineKeyboardButton('ᴛᴏᴘ sᴇᴀʀᴄʜɪɴɢ ⭐', callback_data="topsearch"),
                       ]]
             reply_markup = InlineKeyboardMarkup(buttons)
