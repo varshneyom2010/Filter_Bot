@@ -2,7 +2,7 @@ class script(object):
     START_TXT = """<b><u>🚩 𝗛𝗔𝗥 𝗛𝗔𝗥 𝗠𝗔𝗛𝗔𝗗𝗘𝗩 🚩</u></b>
 
 👋 Hᴇʟʟᴏ {}
-🤖 ɪ ᴀᴍ <a href="https://t.me/filmy_duniya1bot">𝐂ɪɴᴇᴍᴀ 𝐇ᴀʟʟ</a></b>
+🤖 ɪ ᴀᴍ <a href="https://t.me/filmy_duniya1bot">𝐅ɪʟᴍʏ 𝐃ᴜɴɪʏᴀ</a></b>
    
 ✨ <b>Sᴇᴀʀᴄʜ Yᴏᴜʀ Mᴏᴠɪᴇ Nᴀᴍᴇ Wɪᴛʜ Cᴏʀʀᴇᴄᴛ Sᴩᴇʟʟɪɴɢ Aɴᴅ Eɴᴊᴏʏ...</b>😃
 
@@ -15,7 +15,7 @@ class script(object):
     GSTART_TXT = """<b>🚩𝗛𝗔𝗥 𝗛𝗔𝗥 𝗠𝗔𝗛𝗔𝗗𝗘𝗩🚩</b>
 
 👋 Hᴇʟʟᴏ {}
-🤖 ɪ ᴀᴍ <a href="https://t.me/filmy_duniya1bot">𝐂ɪɴᴇᴍᴀ 𝐇ᴀʟʟ</a></b>
+🤖 ɪ ᴀᴍ <a href="https://t.me/filmy_duniya1bot">𝐅ɪʟᴍʏ 𝐃ᴜɴɪʏᴀ</a></b>
    
 ✨ <b>Sᴇᴀʀᴄʜ Yᴏᴜʀ Mᴏᴠɪᴇ Nᴀᴍᴇ Wɪᴛʜ Cᴏʀʀᴇᴄᴛ Sᴩᴇʟʟɪɴɢ Aɴᴅ Eɴᴊᴏʏ...</b>😃
 
