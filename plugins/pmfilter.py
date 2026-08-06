@@ -75,8 +75,8 @@ async def give_filter(client, message):
             script.ALREADY_AVAILABLE_TXT.format(message.from_user.mention, total_results, search),
             reply_markup=InlineKeyboardMarkup([
                 [
-                    InlineKeyboardButton("📝𝗥𝗘𝗤𝗨𝗘𝗦𝗧 𝗛𝗘𝗥𝗘", url="https://t.me/Filmy_DuniyaBot"),
-                    InlineKeyboardButton("Groups", url="https://t.me/hd_movie_zonee")
+                    InlineKeyboardButton("📝𝗥𝗘𝗤𝗨𝗘𝗦𝗧 𝗛𝗘𝗥𝗘", url="https://t.me/Nothing_HackerBot"),
+                    InlineKeyboardButton("Groups", url="https://t.me/AL_Theater")
                 ],
                 [
                     InlineKeyboardButton("Share With Friends 🚀", switch_inline_query="")
